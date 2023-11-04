@@ -6,8 +6,6 @@ const Hello =(props)=>{
     </div>
   )
 }
-
-
 const App = () => {
   const now = new Date();
   const a=10; 
