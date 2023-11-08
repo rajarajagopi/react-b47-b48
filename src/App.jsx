@@ -1,4 +1,4 @@
-import './App.css';
+/*import './App.css';
 const Hello =(props)=>{
   return (
     <div>
@@ -30,4 +30,25 @@ return (
   </div>
 )
 }
+export default App;*/
+
+//------------------day22----------day3-----------------React rfce
+import React from "react";
+function App(props) {
+  console.log(props.notes);
+  const {notes} = props; // destructuring data
+  return (
+    <div>
+      <h1>Notes</h1>
+      <ul>
+        <li>{ notes[0].content} </li>
+        <li>{ notes[1].content} </li>
+        <li>{ notes[2].content} </li>
+        <li>{ notes[3].content} </li>
+        <li>{ notes[4].content} </li>
+      </ul>
+    </div>
+  )
+}
+
 export default App;
