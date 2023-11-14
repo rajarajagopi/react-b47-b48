@@ -53,12 +53,7 @@ function App(props) {
 }*/
 //-----------------create a each note with component
 import React from "react";
-function Note({note}){
- // const note=props.note;
-return(
-  <li>{note.content}</li>
-)
-}
+import Note from './Component/Note';
 
 function App(props) {
   console.log(props.notes);
