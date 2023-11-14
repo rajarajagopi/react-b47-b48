@@ -33,7 +33,7 @@ return (
 export default App;*/
 
 //------------------day22----------day3-----------------React rfce
-import React from "react";
+/*import React from "react";
 function App(props) {
   console.log(props.notes);
   const {notes} = props; // destructuring data
@@ -50,6 +50,31 @@ function App(props) {
       </ul>
     </div>
   )
+}*/
+//-----------------create a each note with component
+import React from "react";
+function Note({note}){
+ // const note=props.note;
+return(
+  <li>{note.content}</li>
+)
 }
 
+function App(props) {
+  console.log(props.notes);
+  const {notes} = props; // destructuring data
+  return (
+    <div>
+      <h1>Notes</h1>
+      <ul>
+      {
+        notes.map((note) => {
+        return <Note key={note.id} note={ note }/>
+        })
+      }
+        
+      </ul>
+    </div>
+  )
+}
 export default App;
