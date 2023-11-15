@@ -52,7 +52,7 @@ function App(props) {
   )
 }*/
 //-----------------create a each note with component
-import React from "react";
+/*import React from "react";
 import Note from './Component/Note';
 
 function App(props) {
@@ -67,6 +67,28 @@ function App(props) {
         return <Note key={note.id} note={ note }/>
         })
       }
+        
+      </ul>
+    </div>
+  )
+}*/
+
+
+import React from "react";
+import Note from './Component/Note';
+
+function App(props) {
+  console.log(props.notes);
+  const {notes} = props;// destructuring data
+  const listItem = [];
+  notes.forEach((note) => {
+    listItem.push(<Note key={note.id} note={ note }/> )
+  });
+  return (
+    <div>
+      <h1>Notes</h1>
+      <ul>
+      { listItem }
         
       </ul>
     </div>
