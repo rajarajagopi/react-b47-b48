@@ -80,17 +80,16 @@ import Note from './Component/Note';
 function App(props) {
   console.log(props.notes);
   const {notes} = props;// destructuring data
-  const listItem = [];
+  const optionList = [];
   notes.forEach((note) => {
-    listItem.push(<Note key={note.id} note={ note }/> )
+    optionList.push(<Note key={note.id} note={ note }/> )
   });
   return (
     <div>
       <h1>Notes</h1>
-      <ul>
-      { listItem }
-        
-      </ul>
+      <select>
+        {optionList}
+      </select>
     </div>
   )
 }
