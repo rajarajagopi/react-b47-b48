@@ -1,7 +1,13 @@
 function Note({note}){
     // const note=props.note;
+    if(note.important)//Conditional rendering
+    {
+        return(
+            <li>{note.content}   ★</li>
+          )
+    }
    return(
-     <option>{note.content}</option>
+     <li>{note.content}</li>
    )
    }
    export default Note;
