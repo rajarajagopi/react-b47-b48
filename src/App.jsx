@@ -84,12 +84,24 @@ function App(props) {
   notes.forEach((note) => {
     optionList.push(<Note key={note.id} note={ note }/> )
   });
+
+  const addNote = (event) =>{
+    addNote.preventDefault();
+    console.log(event.target.elements.note.value);
+
+  }
   return (
     <div>
       <h1>Notes</h1>
    <ul>
     {optionList}
    </ul> 
+
+   <form onSubmit={addNote}>
+   <input name='note' />
+   <button type='submit'>Save Note</button>
+   </form>
+   
     </div>
   )
 }
