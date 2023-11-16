@@ -85,10 +85,10 @@ function App(props) {
     optionList.push(<Note key={note.id} note={ note }/> )
   });
 
-  const addNote = (event) =>{
-    event.preventDefault();
+  const addNote = () =>{
+  
     //console.log(event.target.elements.note.value);
-    console.log('onClick working');
+    console.log('Button Clicked');
 
   }
   return (
@@ -100,7 +100,7 @@ function App(props) {
 
    <form>
    <input name='note' />
-   <button onClick={addNote}>Save Note</button>
+   <button onClick={() => addNote()}>Save Note</button>
    </form>
    
     </div>
