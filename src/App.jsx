@@ -86,7 +86,7 @@ function App(props) {
   });
 
   const addNote = (event) =>{
-    addNote.preventDefault();
+    event.preventDefault();
     console.log(event.target.elements.note.value);
 
   }
