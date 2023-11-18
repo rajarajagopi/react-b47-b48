@@ -44,15 +44,20 @@ function App() {
 import { Component } from "react";
 class Hello extends Component{
   render()
+ 
   {
-    return <div>Hello guest...!</div>
+    const { name }=this.props;
+    return <div>Hello {name}...!</div>
+    //return <div>Hello {this.props.name}...!</div>
   }
 }
 class App extends Component{
   render()
   {
+    
     return (
-    <div><Hello /></div>
+    <div><Hello name='Rajgopi' /></div>
+
     )
   }
 }
