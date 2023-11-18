@@ -10,12 +10,9 @@ function App() {
 }
 
 export default App*/
-
-
-
 //-----------------------------------
 //------- This is Class component--------------------------------
-import { Component } from "react";
+/*import { Component } from "react";
 class App extends Component {
 render(){
   return(
@@ -25,4 +22,22 @@ render(){
 }
 }
 
-export default App;
+*/
+
+//--------------Passing props in function component--------------
+import React from 'react'
+function Hello({name})
+{
+  return(<div>Hello {name}</div>)
+  
+}
+
+function App() {
+  return (
+    <div>
+      <Hello name="Gopi"/>
+    </div>
+  )
+}
+
+export default App
