@@ -46,8 +46,8 @@ class Hello extends Component{
   render()
  
   {
-    const { name }=this.props;
-    return <div>Hello {name}...!</div>
+    const { name , age }=this.props;
+    return <div>Hello {name} age is {age}...!</div>
     //return <div>Hello {this.props.name}...!</div>
   }
 }
@@ -56,7 +56,7 @@ class App extends Component{
   {
     
     return (
-    <div><Hello name='Rajgopi' /></div>
+    <div><Hello name='Rajgopi' age={34} /></div>
 
     )
   }
