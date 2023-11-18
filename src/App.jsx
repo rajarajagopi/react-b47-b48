@@ -25,7 +25,7 @@ render(){
 */
 
 //--------------Passing props in function component--------------
-import React from 'react'
+/*import React from 'react'
 function Hello({name})
 {
   return(<div>Hello {name}</div>)
@@ -39,5 +39,13 @@ function App() {
     </div>
   )
 }
-
+*/
+//Creating class component
+import React from 'react'
+class App extends Component{
+  render()
+  {
+    return <div>Hello Rajagopi</div>
+  }
+}
 export default App
