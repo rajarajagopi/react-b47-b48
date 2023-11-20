@@ -7,9 +7,12 @@ function App() {
     // console.log('button clicked');
     setCounter(counter + 1);
   }
-
   const handleZeroClick = () => {
     setCounter(0);
+  }
+
+  const handleMinusClick = () => {
+    setCounter(counter - 1);
   }
 
   console.log('rendering...', counter);
@@ -18,6 +21,7 @@ function App() {
     <div>
       <div>{counter}</div>
       <button onClick={handlePlusClick}>plus</button>
+      <button onClick={handleMinusClick}>minus</button>
       <button onClick={handleZeroClick}>zero</button>
     </div>
 
