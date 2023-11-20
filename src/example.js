@@ -17,4 +17,4 @@ class App extends Component{
 }
 
 let app = new App();
-app.render();
+//app.render();
