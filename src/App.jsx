@@ -1,16 +1,6 @@
 import React, { useState } from 'react';
-function Display({counter}) {
-  return (
-    <div>{counter}</div>
-  )
-}
-
-function Button({text, handleClick}) {
-  return (
-    <button onClick={handleClick}>{ text }</button>
-  )
-}
-
+import Display from './Component/Display';
+import Button from './Component/Button';
 function App() {
   const [counter, setCounter] = useState(0);
   const handlePlusClick = () => {
